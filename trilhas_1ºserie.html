@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilhas 1º Série</title>
+    <link rel="stylesheet" href="arquivosCSS/reset.css">
+    <link rel="stylesheet" href="arquivosCSS/style.css">
+    <link rel="stylesheet" href="arquivosCSS/trilhas_1ºserie/cabecalho.css">
+    <link rel="stylesheet" href="arquivosCSS/trilhas_1ºserie/main.css">
+    <link rel="stylesheet" href="arquivosCSS/trilhas_1ºserie/rodape.css">
+    <link rel="stylesheet" href="arquivosCSS/trilhas_1ºserie/mudanca-tema.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="cabecalho">
+            <a href="index.html">
+                <div id="logo-edutech">
+                    <img src="imagens/logo_edutech.png" alt="Logo do EduTech" class="logo-edutech">
+                </div>
+            </a>
+
+            <nav>
+                <ul class="header_menu-navegacao">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="trilhas_nivel1.html">TRILHAS</a></li>
+                    <li><a href="inscricoes.html">INSCRIÇÃO</a></li>
+                </ul>
+            </nav>
+
+            <button id="botao-muda-tema" onclick="mudarTema()">Mudar Tema</button>
+        </div>
+
+        <!-- Segunda parte do cabeçalho -->
+        
+        <nav>
+            <ul class="menu-navegacao-trilhas">
+                <li><a href="trilhas_nivel1.html">Nível 1 (6º e 7º anos)</a></li>
+                <li><a href="trilhas_nivel2.html">Nível 2 (8º e 9º anos)</a></li>
+                <li><a href="trilhas_1ºserie.html" class="atual">1º Série</a></li>
+                <li><a href="trilhas_2ºserie.html">2º Série</a></li>
+                <li><a href="trilhas_3ºserie_e_tecnico.html">3º Série e Técnico</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section>
+            <h1>Trilhas de Estudo</h1>
+            <h2 class="trilha_titulo">FRONT-END com HTML e CSS - 1ª Série Ensino Médio</h2>
+
+            <!-- Explicação -->
+
+            <p class="paragrafo-explicacao">
+                Neste curso vamos aprender como a lógica de programação funciona e vamos aplicá-la na construção de
+                páginas e site utilizando a tecnologia HMTL5 e CSS3, que são as tecnologias de base utilizadas hoje no
+                mercado de trabalho. Depois que tivermos conhecimento sobre as bases vamos avançar para algumas
+                ferramentas que nos auxiliam no desenvolvimento mais rápido de páginas, sites e até mesmo ambientes
+                completos, como portais, e para isso vamos utilizar ferramentas como Flexbox e Bootstrap e para concluir
+                o nosso curso faremos um projeto completo desde a base às páginas, passando para um estudo de layout
+                para que nosso site rode em vários tipos de dispositivos desde computadores até smartphones.
+                contemplando as diversas técnicas e tecnologias para desenvolvimento de FRONT-END, que temos no mercado.
+            </p>
+
+            <div class="video-explicacao">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DmyoZ2T7wQs"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen class="video">
+                </iframe>
+            </div>
+
+            <!-- Consteúdos -->
+
+            <h3 class="conteudo_titulo">Conteúdos</h3>
+
+            <ul class="lista_conteudo">
+                <div>
+                    <li>Lógica de programação I: Os primeiros programas com JavaScript e HTML</li>
+                    <li>Lógica de programação II: Pratique com desenhos, animações e um jogo</li>
+                    <li>HTML5 e CSS3 parte 1: A primeira página da Web</li>
+                    <li>HTML5 e CSS3 parte 2: Posicionamento, listas e navegação</li>
+                    <li>HTML5 e CSS3 parte 3: Trabalhando com formulários e tabelas</li>
+                    <li>HTML5 e CSS3 parte 4: Avançando no CSS</li>
+                </div>
+                <div>
+                    <li>CSS Grid: Simplificando layouts</li>
+                    <li>Flexbox: Posicione elementos na tela</li>
+                    <li>Bootstrap: Criação de uma single-page responsiva</li>
+                    <li>Bootstrap 4: Criando uma landing page responsiva</li>
+                    <li>Arquitetura CSS: Descomplicando os problemas</li>
+                </div>
+                <div>
+                    <li>Acessibilidade web parte 1: Tornando seu front-end inclusivo</li>
+                    <li>Acessibilidade web parte 2: Componentes acessíveis com um pouco de JavaScript</li>
+                    <li>HTTP: Entendendo a web por baixo dos panos</li>
+                    <li>Vetores e Animação com SVG: Trabalhando com CSS e JavaScript</li>
+                    <li>Layouts Responsivos: Trabalhando com layouts mobile</li>
+                    <li>Front-end: Projeto de conclusão</li>
+                </div>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <a href="https://www.educacao.pr.gov.br">
+            <div id="logo-parana">
+                <img src="imagens/governo_parana.jpg" alt="Logo do Governo do Paraná" class="logo-governo-parana"
+                    id="logo-governo-parana">
+            </div>
+        </a>
+        <a href="index.html">
+            <div id="logo-edutech2">
+                <img src="imagens/logo_edutech.png" alt="Logo do EduTech">
+            </div>
+        </a>
+        <a href="https://cursos.alura.com.br/"><img src="imagens/logo-alura.svg" alt="Logo da Alura"></a>
+    </footer>
+
+    <script src="arquivosJS/trilhas_1ºserie/script.js"></script>
+</body>
+
+</html>

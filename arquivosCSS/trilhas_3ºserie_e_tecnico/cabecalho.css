@@ -1,0 +1,166 @@
+/* CSS da primeira parte do cabeçalho */
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    background-color: white; 
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo-edutech {
+    width: 120px;
+    height: auto;  
+}
+
+.header_menu-navegacao {
+    display: flex;
+    
+}
+
+.header_menu-navegacao li {
+    margin: 0 50px;
+    list-style: none;
+}
+
+.header_menu-navegacao a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 21px;
+}
+
+button {
+    border-radius: 5px;
+    cursor: pointer;
+    width: 95px;
+    height: 40px;
+    border: 3px solid #313131;
+}
+
+/* CSS da parte das trilhas */
+
+.menu-navegacao-trilhas {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #F5F5F5;
+}
+
+.menu-navegacao-trilhas li{
+    list-style: none;
+    font-weight: bold;
+}
+
+.menu-navegacao-trilhas a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 8px 30px;
+}
+
+.menu-navegacao-trilhas a:hover{
+    background-color: white;
+}
+
+.atual  {
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+}
+
+/* Responsivo para celular */
+
+@media screen and (max-width: 720px){
+    /* primeira parte do cabeçalho */
+
+    header {
+        position: relative;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+    }
+
+    .logo-edutech {
+        margin-top: 20px;
+    }
+
+    .header_menu-navegacao {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .header_menu-navegacao li {
+        margin: 5px 0;
+    }
+
+    button {
+        margin-bottom: 20px;
+        margin-right: 4%;
+    }
+
+    /* Segunda parte do cabeçalho */
+
+    .menu-navegacao-trilhas {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu-navegacao-trilhas li {
+        margin: 3% 0;
+    }
+
+    .menu-navegacao-trilhas a {
+        padding: 0;
+        padding: 5px 10px;
+    }
+}
+
+/* Responsivo para tablet */
+
+
+@media screen and (max-width: 1024px) {
+    /* primeira parte do cabeçalho */
+
+    header {
+        position: relative;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+    }
+
+    .logo-edutech {
+        margin-top: 10px;
+    }
+
+    .header_menu-navegacao {
+        margin: 50px 0;
+    }
+
+    button {
+        margin-bottom: 10px;
+    }
+
+    /* Segunda parte do cabeçalho */
+
+    .menu-navegacao-trilhas {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu-navegacao-trilhas li {
+        margin: 2% 0;
+    }
+
+    .menu-navegacao-trilhas a {
+        padding: 0;
+        padding: 5px 10px;
+    }
+}   

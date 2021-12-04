@@ -1,0 +1,194 @@
+main {
+    padding: 180px 0 140px;
+    background-color: #EBEBEB;
+}
+
+/* CSS da parte mobile */
+
+h1 {
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    margin: 50px 0 75px;
+}
+
+/* CSS da parte de explicação */
+
+.trilhas_titulo {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.paragrafo-explicacao {
+    font-size: 20px;
+    margin: 0 9%;
+}
+
+.video_explicacao {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* CSS da parte dos conteúdos */
+
+.conteudos_titulo {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.conteudos_lista {
+    list-style: disc;
+    margin: 0 10.5%;
+    font-size: 20px;
+}
+
+.conteudos_lista div {
+    margin: 15px 0;
+}
+
+/* CSS da parte de Data Science */
+
+.trilhas_titulo_data-science {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 50px 0 30px;
+}
+
+.paragrafo_explicacao_data-science {
+    font-size: 20px;
+    margin: 0 9%;
+}
+
+/* CSS da parte de conteúdos */
+
+.conteudos_titulo_data-science {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.conteudos_lista_data-science {
+    list-style: disc;
+    font-size: 20px;
+    margin: 0 10.5%;
+}
+
+.conteudos_lista_data-science div{
+    margin: 15px 0;
+}
+
+/* Responsivo para celular */
+
+@media screen and (max-width: 720px) {
+
+    /* mobile */
+
+    main {
+        padding-top: 30px;
+    }
+
+    /* Parte explicação */
+
+    .trilhas_titulo {
+        margin: 0 5% 30px;
+    }
+
+    .paragrafo-explicacao {
+        margin: 0 5%;
+    }
+
+    .video {
+        width: 90%;
+    }
+
+    /* Parte conteúdos */
+
+    .conteudos_lista {
+        margin: 0 9%;
+    }
+
+    .conteudos_lista li {
+        margin: 5px 0;
+    }
+
+    /* Data Science */
+
+    /* Parte explicação */
+
+    .trilhas_titulo_data-science {
+        margin: 50px 5% 30px;
+    }
+
+    .paragrafo_explicacao_data-science {
+        margin: 0 5%;
+    }
+
+    /* Parte conteúdos */
+
+    .conteudos_lista_data-science {
+        margin: 0 9%;
+    }
+
+    .conteudos_lista_data-science li {
+        margin: 5px 0;
+    }
+}
+
+/* Responsivo para tablet */
+
+@media screen and (max-width: 1024px) {
+    
+    /* mobile */
+
+    main {
+        padding-top: 30px;
+    }
+
+    /* Parte explicação */
+
+    .trilhas_titulo {
+        margin: 0 5% 30px;
+    }
+
+    .paragrafo-explicacao {
+        margin: 0 5%;
+    }
+
+    /* Parte conteúdos */
+
+    .conteudos_lista {
+        margin: 0 8%;
+    }
+
+    .conteudos_lista li {
+        margin: 5px 0;
+    }
+
+    /* Data Science */
+
+    /* Parte explicação */
+
+    .trilhas_titulo_data-science {
+        margin: 50px 5% 30px;
+    }
+
+    .paragrafo_explicacao_data-science {
+        margin: 0 5%;
+    }
+
+    /* Parte conteúdos */
+
+    .conteudos_lista_data-science {
+        margin: 0 8%;
+    }
+
+    .conteudos_lista_data-science li {
+        margin: 5px 0;
+    }
+}

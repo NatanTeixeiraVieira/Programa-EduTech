@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa EduTech</title>
+    <link rel="stylesheet" href="arquivosCSS/reset.css">
+    <link rel="stylesheet" href="arquivosCSS/style.css">
+    <link rel="stylesheet" href="arquivosCSS/index/cabecalho.css">
+    <link rel="stylesheet" href="arquivosCSS/index/main.css">
+    <link rel="stylesheet" href="arquivosCSS/index/rodape.css">
+    <link rel="stylesheet" href="arquivosCSS/index/mudanca-tema.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="cabecalho">
+            <a href="index.html">
+                <div id="logo-edutech">
+                    <img src="imagens/logo_edutech.png" alt="Logo do EduTech" class="logo-edutech">
+                </div>
+            </a>
+
+            <nav>
+                <ul class="header_menu-navegacao">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="trilhas_nivel1.html">TRILHAS</a></li>
+                    <li><a href="inscricoes.html">INSCRIÇÃO</a></li>
+                </ul>
+            </nav>
+
+            <button id="botao-muda-tema" onclick="mudarTema()">Mudar Tema</button>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- Sessão de explicação e apresentação sobre o EduTech -->
+        <section>
+            <h1>Programa EduTech</h1>
+            <p class="explicação-edutech">Pautada nas “Diretrizes para Ensino de Computação na Educação Básica”, da
+                Sociedade Brasileira de
+                Computação, e considerando as Competências Gerais da BNCC para a formação do jovem do século XXI, a
+                Secretaria de Estado da Educação e do Esporte, visando a compreensão plena do mundo, cada vez mais
+                conectado e imerso em tecnologias digitais, oportuniza a aprendizagem da programação a crianças,
+                adolescentes e jovens matriculados nas instituições de ensino da Rede Pública Estadual do Paraná,
+                aumentando a capacidade de aprendizagem e resolução de problemas, promovendo novas formas de expressão e
+                pensamento com a utilização de linguagem digital, exercitando a curiosidade intelectual, o pensamento
+                crítico, científico e a criatividade e dando apoio ao aprendizado das demais disciplinas.</p>
+
+            <div class="video-apresentacao">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/X1M4ieNQ6OM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- Sessão de informações importantes sobre o EduTech -->
+        <section class="informacoes-importantes">
+            <h2 class="informacoes-importantes_titulo">Informações Importantes</h2>
+            <p>Antes de realizar sua inscrição nos cursos de programação, que são <strong>gratuitos</strong>, fique
+                atento às orientações abaixo:</p>
+
+            <ul class="lista-informacoes-importantes">
+                <li>
+                    As inscrições destinam-se a alunos e professores da Rede Pública Estadual do Paraná;
+                </li>
+                <li>
+                    Caso o inscrito não receba o e-mail de confirmação, deve-se verificar a caixa de SPAM do seu e-mail
+                    "@escola";
+                </li>
+                <li>
+                    Para que a inscrição seja realizada com sucesso, deve-se estar logado unicamente com sua conta
+                    @escola;
+                </li>
+                <li>
+                    Processo de Credenciamento classifica os inscritos por ordem de inscrição;
+                </li>
+                <li>
+                    Os selecionados serão informados do início das atividades, pelo seu e-mail @escola;
+                </li>
+                <li>
+                    O término dos cursos oferecidos coincidem com o término do ano letivo vigente;
+                </li>
+                <li>
+                    A plataforma de programação disponibilizará um certificado, ao final de cada conteúdo de estudo
+                    finalizado;
+                </li>
+                <li>
+                    Para se inscrever no Programa EDUTECH, recomendamos que utilize um computador e conecte-se primeiro
+                    à sua conta @escola e, depois, acesse o link de inscrição abaixo;
+                </li>
+                <li>
+                    Caso utilize um smartphone, acesse o link de inscrição abaixo utilizando uma janela anônima de seu
+                    navegador de internet e conecte-se à conta @escola;
+                </li>
+                <li>
+                    Consulte
+                    <a
+                        href="https://www.educacao.pr.gov.br/sites/default/arquivos_restritos/files/documento/2021-03/edital032021_dti_seed.pdf">
+                        Edital nº 03/2021 - DTI/SEED;
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://www.educacao.pr.gov.br/sites/default/arquivos_restritos/files/documento/2021-05/edital_retificacao_042021_dti_seed_edutech.pdf">
+                        Edital nº 04/2021 - DTI/SEED
+                    </a>
+                    - Retifica a quantidade de faltas pelas quais o cursista será considerado desligado, no Edital nº
+                    03/2021 - DTI/SEED;
+                </li>
+                <li>
+                    <a
+                        href="https://www.educacao.pr.gov.br/sites/default/arquivos_restritos/files/documento/2021-05/edital_retificacao_052021_dti_seed_edutech.pdf">
+                        Edital nº 05/2021 - DTI/SEED
+                    </a>
+                    - Retifica o disposto no item “4.3.1”, no Edital nº 03/2021 - DTI/SEED.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Sessão de contatos -->
+        <section class="contatos">
+            <h2 class="contato_titulo">Contato</h2>
+            <p>Caso não consiga realizar a inscrição ou tenha alguma dúvida sobre os cursos de programação, entre em
+                contato conosco:</p>
+            <p>E-mail: programacao.parana@escola.pr.gov.br</p>
+            <p>Telefone: 41 3340-1754</p>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <a href="https://www.educacao.pr.gov.br">
+            <div id="logo-parana">
+                <img src="imagens/governo_parana.jpg" alt="Logo do Governo do Paraná" class="logo-governo-parana"
+                    id="logo-governo-parana">
+            </div>
+        </a>
+        <a href="index.html">
+            <div id="logo-edutech2">
+                <img src="imagens/logo_edutech.png" alt="Logo do EduTech">
+            </div>
+        </a>
+        <a href="https://cursos.alura.com.br/"><img src="imagens/logo-alura.svg" alt="Logo da Alura"></a>
+    </footer>
+
+    <script src="arquivosJS/index/script.js"></script>
+</body>
+
+</html>

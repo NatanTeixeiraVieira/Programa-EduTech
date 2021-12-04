@@ -1,0 +1,36 @@
+/* Tema escuro do header */
+
+.dark_header {
+    background-color: #333333;
+}
+
+.dark_header a {
+    color: #F6F6F6;
+}
+
+.dark_header button {
+    background-color: #121212;
+    color: #F6F6F6;
+    border-color: #F6F6F6;
+}
+
+/* Tema escuro da main */
+
+.dark_main {
+    background-color: #121212;
+}
+
+.dark_main h1, .dark_main h2 {
+    color: #F6F6F6;
+}
+
+.dark_main p, .dark_main li, .dark_main a {
+    color: #CFCFCF;
+}
+
+/* Tema escuro do rodapé */
+
+.dark_footer {
+    background-color: #333333;
+}
+

@@ -1,0 +1,178 @@
+main {
+    background-color: #EBEBEB;
+    padding: 180px 0 140px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    margin: 50px 0 75px;
+}
+
+/* CSS da parte de Java */
+
+/* CSS da parte de explicação */
+
+.explicacao_titulo {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.paragrafos-explicacao {
+    font-size: 20px;
+    margin: 0 9%;
+}
+
+.paragrafos-explicacao p {
+    margin: 15px 0;
+}
+
+.video_explicacao {
+    text-align: center;
+}
+
+/* CSS da parte dos conteúdos */
+
+.conteudos_titulo {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.conteudos_lista {
+    list-style: disc;
+    font-size: 20px;
+    margin: 0 10.2%;
+}
+
+.conteudos_lista div {
+    margin: 15px 0;
+}
+
+/* CSS da parte de Python */
+
+/* CSS da parte de explicação */
+
+.explicacao_titulo_python {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 50px 0 30px;
+}
+
+.paragrafos-explicacao_python {
+    font-size: 20px;
+    margin: 0 9%;
+}
+
+.paragrafos-explicacao_python p {
+    margin: 15px 0;
+}
+
+/* CSS da parte de conteúdos */
+
+.titulo_conteudos {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.lista_conteudos {
+    list-style: disc;
+    font-size: 20px;
+    margin: 0 10.5%;
+}
+
+.lista_conteudos div {
+    margin: 15px 0;
+}
+
+/* Responsivo para celular */
+
+@media screen and (max-width: 720px) {
+    main {
+        padding-top: 30px;
+    }
+
+    /* Parte Java */
+
+    /* Parte de explicação */
+
+    .paragrafos-explicacao {
+        margin: 0 5%;
+    }
+
+    .video {
+        width: 90%;
+    }
+
+    /* Parte de conteúdos */
+
+    .conteudos_lista {
+        margin: 0 9%;
+    }
+
+    /* Parte Python */
+
+    /* Parte explicação */
+
+    .paragrafos-explicacao_python {
+        margin: 0 5%;
+    }
+
+    /* Parte de conteúdos */
+
+    .lista_conteudos {
+        margin: 0 9%;
+    }
+
+    .lista_conteudos li {
+        margin: 5px 0;
+    }
+
+}
+
+/* Responsivo para tablet */
+
+@media screen and (max-width: 1024px) {
+    main {
+        padding-top: 30px;
+    }
+
+    /* Parte Java */
+
+    /* Parte de explicação */
+
+    .paragrafos-explicacao {
+        margin: 0 5%;
+    }
+
+    /* Parte de conteúdos */
+
+    .conteudos_lista {
+        margin: 0 8%;
+    }
+
+    /* Parte Python */
+
+    /* Parte explicação */
+
+    .paragrafos-explicacao_python {
+        margin: 0 5%;
+    }
+
+    /* Parte de conteúdos */
+
+    .lista_conteudos {
+        margin: 0 7.5%;
+    }
+
+    .lista_conteudos li {
+        margin: 5px 0;
+    }
+}

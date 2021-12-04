@@ -1,0 +1,206 @@
+main {
+    background-color: #EBEBEB;
+    padding: 145px 0 140px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    margin: 50px 0 75px;
+}
+
+/* CSS dos dados pessoais */
+
+.dados-pessoais_titulo {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.dados-pessoais label {
+    font-size: 20px;
+    display: block;
+}
+
+.dados-pessoais input {
+    width: 35%;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 10px 0 30px;
+    padding: 0 20px;
+}
+
+.dados-pessoais_formulario {
+    margin-left: 2%;
+}
+
+/* CSS da parte de disponibilidade */
+
+.disponibilidade legend {
+    font-size: 20px;
+    margin: 0 35% 0 2%;
+}
+
+.disponibilidade div {
+    margin-left: 1.7%;
+}
+
+.disponibilidade label {
+    font-size: 20px;
+    display: block;
+    margin-top: 20px;
+}
+
+/* CSS da parte de dados de matrículas */
+
+.dados-matricula_titulo {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 75px 0 30px;
+}
+
+.dados-matricula legend {
+    font-size: 20px;
+    margin-left: 2%;
+}
+
+.dados-matricula_formulario label{
+    margin: 20px 0 0 1.7%;
+    font-size: 20px;
+    display: block;
+}
+
+/* CSS da parte das trilhas */
+
+.trilhas_h2 {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 75px 0 30px;
+}
+
+.trilhas_fieldset legend{
+    font-size: 20px;
+    margin: 0 0 20px 2%;
+}
+
+.trilhas_fieldset p {
+    font-size: 20px;
+    margin-left: 2%;
+}
+
+.trilhas_fieldset div {
+    margin-bottom: 20px;
+}
+
+.trilhas_fieldset input {
+    margin-left: 1.7%;
+}
+
+.trilhas_fieldset label {
+    font-size: 20px;
+}
+
+/* CSS da parte de turno de matrícula */
+
+.turno-matricula_titulo {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 75px 0 30px;
+}
+
+.turno-matricula legend {
+    font-size: 20px;
+    margin-left: 2%;
+}
+
+.turno-matricula_formulario label {
+    display: block;
+    font-size: 20px;
+    margin: 20px 0 0 1.7%;
+}
+
+/* CSS da parte de conhecimento */
+
+.conhecimento_titulo {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 75px 0 30px;
+}
+
+.conhecimento legend {
+    font-size: 20px;
+    margin-left: 2%;
+}
+
+.conhecimento_formulario label {
+    display: block;
+    font-size: 20px;
+    margin: 20px 0 0 1.7%;
+}
+
+
+/* CSS do botão de enviar  */
+
+.botao-enviar {
+    text-align: center;
+}
+
+.botao-enviar button {
+    width: 20%;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+/* Responsivo para celular */
+
+@media screen and (max-width: 720px) {
+    main {
+        padding-top: 30px;
+        padding-left: 4px;
+    }
+
+    h1, h2 {
+        margin-right: 2%;
+    }
+
+    /* CSS da parte de disponibilidade, dados de matrícula, trilhas, turno de matrícula e conhecimento*/
+
+    .disponibilidade legend, .dados-matricula legend, .dados-matricula_formulario, .trilhas_fieldset, .turno-matricula, .conhecimento {
+        margin-right: 2%;
+    }
+
+    /* CSS da parte do botão de enviar */
+
+    .botao-enviar button {
+        width: 50%;
+    }
+}
+
+/* Responsivo para tablet */
+
+@media screen and (max-width: 1024px) {
+    main {
+        padding-top: 30px;
+    }
+
+    /* CSS da parte de dados pessoais */
+
+    .dados-pessoais_formulario input {
+        width: 50%;
+    }
+
+    /* CSS da parte de disponibilidade e conhecimento */
+
+    .disponibilidade legend, .conhecimento {
+        margin-right: 2%;
+    }
+}

@@ -1,0 +1,103 @@
+main {
+    background-color: #EBEBEB;
+    padding: 185px 0 140px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 35px;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.trilha_titulo {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 75px 0 30px;
+    text-align: center;
+}
+
+/* CSS dos paragrafos de explicação */
+
+.paragrafo-explicacao {
+    font-size: 20px;
+    margin: 0 9%;
+}
+
+.paragrafo-explicacao p {
+    margin: 15px;
+}
+
+.video-explicacao {
+    text-align: center;
+}
+
+/* CSS do conteúdo */
+
+.conteudo-titulo {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.lista_conteudo {
+    font-size: 20px;
+    margin-left: 11.5%;
+}
+
+.lista_conteudo div {
+    margin: 15px 0;
+}
+
+.lista_conteudo li {
+    list-style: disc;
+}
+
+/* Responsivo para celular */
+
+@media screen and (max-width: 720px) {
+    main {
+        padding-top: 30px;
+    }
+
+    /* Paragrafos */
+
+    .paragrafo-explicacao {
+        margin: 0 3%;
+    }
+
+    .video {
+        width: 90%;
+    }
+
+    /* Conteúdos */
+
+    .lista_conteudo {
+        margin: 0 8.5%;
+    }
+
+    .lista_conteudo li {
+        margin: 5px 0;
+    }
+}
+
+/* Responsivo para teblet */
+
+@media screen and (max-width: 1024px) {
+    main {
+        padding-top: 30px;
+    }
+
+    /* Paragrafos */
+
+    .paragrafo-explicacao {
+        margin: 0 2%;
+    }
+
+    /* Conteúdos */
+
+    .lista_conteudo {
+        margin: 0 6.5%;
+    }
+}

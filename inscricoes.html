@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrições</title>
+    <link rel="stylesheet" href="arquivosCSS/reset.css">
+    <link rel="stylesheet" href="arquivosCSS/style.css">
+    <link rel="stylesheet" href="arquivosCSS/inscricoes/cabecalho.css">
+    <link rel="stylesheet" href="arquivosCSS/inscricoes/main.css">
+    <link rel="stylesheet" href="arquivosCSS/inscricoes/rodape.css">
+    <link rel="stylesheet" href="arquivosCSS/inscricoes/mudanca-tema.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="cabecalho">
+            <a href="index.html">
+                <div id="logo-edutech">
+                    <img src="imagens/logo_edutech.png" alt="Logo do EduTech" class="logo-edutech">
+                </div>
+            </a>
+
+            <nav>
+                <ul class="header_menu-navegacao">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="trilhas_nivel1.html">TRILHAS</a></li>
+                    <li><a href="inscricoes.html">INSCRIÇÃO</a></li>
+                </ul>
+            </nav>
+
+            <button id="botao-muda-tema" onclick="mudarTema()">Mudar Tema</button>
+        </div>
+    </header>
+
+    <main id="main">
+        <form>
+            <h1>Inscrição para o Programa EDUTECH</h1>
+
+            <!-- Dados Pessoais -->
+
+            <h2 class="dados-pessoais_titulo">Dados pessoais</h2>
+
+            <fieldset class="dados-pessoais">
+
+                <div class="dados-pessoais_formulario">
+                    <label for="nome-sobrenome">Nome e sobrenome</label>
+                    <input type="text" id="nome-sobrenome">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="seuemail@escola.pr.gov.br" required>
+
+                    <label for="CGM">CGM (Código Geral de Matrícula)</label>
+                    <input type="number" id="CGM" placeholder="EX.: 123456789" required>
+
+                    <label for="celular">Celular com DDD</label>
+                    <input type="tel" id="celular" placeholder="EX.: (99) 99999-9999" required>
+                </div>
+            </fieldset>
+
+            <!-- Disponibilidade -->
+
+            <fieldset class="disponibilidade">
+
+                <legend>
+                    Você tem disponibilidade de infraestrutura necessária para fazer o curso (computador / notebook
+                    com no mínimo 4gb de RAM e conexão de internet banda larga )?
+                </legend>
+                <div>
+                    <label for="sim"><input type="radio" name="sim/nao" id="sim" required>Sim</label>
+                    <label for="nao"><input type="radio" name="sim/nao" id="nao">Não</label>
+                </div>
+            </fieldset>
+
+            <!-- Dados de matrícula -->
+
+            <h2 class="dados-matricula_titulo">Dados de Matrícula</h2>
+
+            <fieldset class="dados-matricula">
+                <legend>Série/Ano que você está matriculado atualmente:</legend>
+
+                <div class="dados-matricula_formulario">
+                    <label for="6ºano"><input type="radio" name="serie" id="6ºano" onclick="aparecerTrilhas()" required>6º ano</label>
+                    <label for="7ºano"><input type="radio" name="serie" id="7ºano" onclick="aparecerTrilhas()">7º ano</label>
+                    <label for="8ºano"><input type="radio" name="serie" id="8ºano" onclick="aparecerTrilhas()">8º ano</label>
+                    <label for="9ºano"><input type="radio" name="serie" id="9ºano" onclick="aparecerTrilhas()">9º ano</label>
+                    <label for="1ºserie"><input type="radio" name="serie" id="1ºserie" onclick="aparecerTrilhas()">1º série Ensino Médio</label>
+                    <label for="2ºserie"><input type="radio" name="serie" id="2ºserie" onclick="aparecerTrilhas()">2º série Ensino Médio</label>
+                    <label for="3ºserie"><input type="radio" name="serie" id="3ºserie" onclick="aparecerTrilhas()">3º série Ensino Médio</label>
+                    <label for="4ºserie-tecnico"><input type="radio" name="serie" id="4ºserie-tecnico" onclick="aparecerTrilhas()">4º série Técnico Integrado / Profissional</label>
+                </div>
+            </fieldset>
+
+            <!-- Trilhas -->
+
+            <div id="trilhas_titulo">
+            </div>
+
+            <fieldset class="trilhas_fieldset" id="trilhas_fieldset">
+
+            </fieldset>
+            
+
+            <!-- Turno de matrícula -->
+
+            <h2 class="turno-matricula_titulo">Turno de matrícula e do curso</h2>
+            <fieldset class="turno-matricula">
+                <legend>Selecione seu turno de matrícula regular:</legend>
+
+                <div class="turno-matricula_formulario">
+                    <label for="manha"><input type="radio" name="turno" id="manha" required>Manhã</label>
+                    <label for="tarde"><input type="radio" name="turno" id="tarde">Tarde</label>
+                    <label for="noite"><input type="radio" name="turno" id="noite">Noite</label>
+                </div>
+            </fieldset>
+
+            <!-- Conhecimento -->
+
+            <h2 class="conhecimento_titulo">Conhecimento</h2>
+
+            <fieldset class="conhecimento">
+                <legend>Qual o seu nível de conhecimento em programação?</legend>
+
+                <div class="conhecimento_formulario">
+                    <label for="basico"><input type="radio" name="nivel-conhecimento" id="basico" required>
+                        1) Básico - nunca tive contato com programação ou já tive contato com lógica de programação.
+                    </label>
+                    <label for="intermediario"><input type="radio" name="nivel-conhecimento" id="intermediario">
+                        2) Intermediário - já fiz um código simples em programação ou já desenvolvi um programa simples.
+                    </label>
+                    <label for="avancado"><input type="radio" name="nivel-conhecimento" id="avancado">
+                        3) Avançado - já desenvolvi uma aplicação completa.
+                    </label>
+
+                </div>
+            </fieldset>
+
+            <!-- Botão enviar -->
+
+            <div class="botao-enviar">
+                <button type="submit">Enviar Formulário</button>
+            </div>
+        </form>
+    </main>
+
+    <footer id="footer">
+        <a href="https://www.educacao.pr.gov.br">
+            <div id="logo-parana">
+                <img src="imagens/governo_parana.jpg" alt="Logo do Governo do Paraná" class="logo-governo-parana"
+                    id="logo-governo-parana">
+            </div>
+        </a>
+        <a href="index.html">
+            <div id="logo-edutech2">
+                <img src="imagens/logo_edutech.png" alt="Logo do EduTech">
+            </div>
+        </a>
+        <a href="https://cursos.alura.com.br/"><img src="imagens/logo-alura.svg" alt="Logo da Alura"></a>
+    </footer>
+
+    <script src="arquivosJS/inscricoes/script.js"></script>
+    <script src="arquivosJS/inscricoes/interacoes.js"></script>
+</body>
+
+</html>

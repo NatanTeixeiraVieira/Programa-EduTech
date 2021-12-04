@@ -1,0 +1,102 @@
+main {
+    background-color: #EBEBEB;
+    padding: 185px 0 140px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+/* CSS da parte de explicação */
+
+.trilha_titulo {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 75px 0 50px;
+}
+
+.paragrafo-explicacao {
+    font-size: 20px;
+    margin: 0 9%;
+}
+
+.video-explicacao {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* CSS dos conteúdos */
+
+.conteudo_titulo {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.lista_conteudo {
+    font-size: 20px;
+    list-style: disc;
+    margin: 0 10.5%;
+}
+
+.lista_conteudo div {
+    margin: 15px 0;
+}
+
+/* Responsivo para celular */
+
+@media screen and (max-width: 720px){
+    main {
+        padding-top: 30px;
+    }
+    
+    /* parte de explicação */
+
+    .paragrafo-explicacao {
+        margin: 0 5%;
+    }
+
+    .video {
+        width: 90%;
+    }
+
+    /* Parte dos conteúdos */
+
+    .lista_conteudo {
+        margin: 0 9%;
+    }
+
+    .lista_conteudo li {
+        margin: 5px 0;
+    }
+
+}
+
+/* Responsivo para teblet */
+
+@media screen and (max-width: 1024px) {
+    main {
+        padding-top: 30px;
+    }
+    
+    /* parte de explicação */
+
+    .paragrafo-explicacao {
+        margin: 0 5%;
+    }
+
+    /* Parte dos conteúdos */
+
+    .lista_conteudo {
+        margin: 0 9%;
+    }
+
+    .lista_conteudo li {
+        margin: 5px 0;
+    }
+}

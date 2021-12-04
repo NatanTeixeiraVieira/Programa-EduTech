@@ -1,0 +1,31 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+footer img {
+    width: 120px;
+    height: auto;
+}
+
+.logo-governo-parana {
+    width: 170px;
+    height: auto;
+    margin-top: 5px;
+}
+
+/* Responsivo para celular */
+
+@media screen and (max-width: 720px) {
+    footer {
+        flex-direction: column;
+        padding: 0;
+        padding: 20px 0;
+    }
+
+    footer a {
+        margin: 20px 0;
+    }
+}

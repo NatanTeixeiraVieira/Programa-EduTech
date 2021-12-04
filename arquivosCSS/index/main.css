@@ -1,0 +1,164 @@
+/* CSS da sessão de explicação e apresentação sobre o EduTech */
+
+main {
+    padding: 140px 0;
+    background-color: #EBEBEB;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.explicação-edutech {
+    font-size: 20px;
+    margin: 0 125px;
+}
+
+.video-apresentacao {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* CSS da sessão de informações importantes sobre o EduTech */
+
+.informacoes-importantes_titulo {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 100px 0 50px;
+}
+
+.informacoes-importantes p {
+    font-size: 20px;
+    margin: 0 125px 20px;
+}
+
+.inforamcoes-importantes strong {
+    font-weight: bold;
+}
+
+.lista-informacoes-importantes li{
+    font-size: 20px;
+    margin: 0 145px;
+    list-style: disc;
+    margin-bottom: 10px;
+}
+
+.lista-informacoes-importantes a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.lista-informacoes-importantes a:hover {
+    text-decoration: underline;
+}
+
+ /* CSS da sessão de contato */
+
+ .contato_titulo {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 100px 0 50px;
+}
+
+.contatos p {
+    font-size: 20px;
+    margin: 0 0 10px 125px;
+}
+
+.contatos p:first-of-type {
+    margin: 0 125px 20px;
+}
+
+/* Responsivo para celular */
+
+@media screen and (max-width: 720px) {
+    main {
+        padding: 0;
+        padding-bottom: 140px;
+
+    }
+
+    /* Sessão de explicação e apresentação sobre o EduTech */
+    .explicação-edutech {
+        margin: 0;
+        margin: 0 20px;
+    }
+
+    .video-apresentacao iframe {
+        width: 90%;
+    }
+
+    /* Sessão de informações importantes sobre o EduTech */
+
+    .informacoes-importantes p {
+        margin: 0;
+        margin: 0 20px;
+    }
+
+    .informacoes-importantes strong {
+        font-weight: bold;
+    }
+
+    .lista-informacoes-importantes li {
+        margin: 0;
+        margin: 10px 40px;
+    }
+
+    /* Sessão de contatos */
+
+    .contatos p {
+        margin: 0 10px 20px;
+        font-size: 18px;
+    }
+
+    .contatos p:first-of-type {
+        margin: 0;
+        margin: 0 20px 20px;
+    }
+}
+
+/* Responsivo para tablet */
+
+@media screen and (max-width: 1024px) {
+    /* Sessão de explicação e apresentação sobre o EduTech  */
+
+    .explicação-edutech {
+        margin: 0;
+        margin: 0 20px;
+    }
+
+    /* Sessão de informações importantes sobre o EduTech */
+
+    .informacoes-importantes p {
+        margin: 0;
+        margin: 0 20px 10px;
+    }
+
+    .informacoes-importantes strong {
+        font-weight: bold;
+    }
+
+    .lista-informacoes-importantes li {
+        margin: 0;
+        margin: 10px 40px;
+    }
+
+    /* Sessão de contatos */
+
+    .contatos p {
+        margin: 0;
+        margin: 0 20px 10px;
+    }
+
+    .contatos p:first-of-type {
+        margin: 0;
+        margin: 0 20px 10px;
+    }
+
+}
